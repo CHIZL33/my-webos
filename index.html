@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +19,9 @@
   <!-- Hidden file input for EXE uploads -->
   <input type="file" id="exeInput" accept=".exe" style="display:none;">
 
-  <!-- Include the BoxedWine emulator library (placeholder) -->
-  <script src="boxedwine.js"></script>
+  <!-- Include the BoxedWine emulator files -->
+  <script src="boxedwine/boxedwine.js"></script>
+  <!-- (BoxedWine will automatically load the corresponding wasm file if configured properly) -->
   <script src="main.js"></script>
 </body>
 </html>
