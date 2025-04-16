@@ -1,27 +1,18 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My WebOS</title>
+  <title>WebOS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="desktop">
-    <!-- Taskbar -->
-    <div id="taskbar">
-      <button id="startButton">Start</button>
+    <div class="window" id="browserWindow">
+      <div class="titlebar">Web Browser</div>
+      <iframe src="apps/browser.html" class="window-content"></iframe>
     </div>
-    <!-- Container for app windows -->
-    <div id="windowContainer"></div>
   </div>
-  
-  <!-- Hidden file input for EXE uploads -->
-  <input type="file" id="exeInput" accept=".exe" style="display:none;">
 
-  <!-- Include the BoxedWine emulator files -->
-  <script src="boxedwine/boxedwine.js"></script>
-  <!-- (BoxedWine will automatically load the corresponding wasm file if configured properly) -->
   <script src="main.js"></script>
 </body>
 </html>
